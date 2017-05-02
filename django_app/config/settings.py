@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'member.apps.MemberConfig',
 ]
 
 MIDDLEWARE = [
@@ -86,6 +88,8 @@ DATABASES = {
         'PORT': config['db']['port'],
     }
 }
+
+AUTH_USER_MODEL = 'member.MyUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
