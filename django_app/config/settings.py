@@ -21,6 +21,9 @@ CONF_DIR = os.path.join(ROOT_DIR, '.conf-secret')
 CONFIG_FILE = os.path.join(CONF_DIR, 'settings.json')
 config = json.loads(open(CONFIG_FILE).read())
 
+# Template
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -63,7 +66,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
