@@ -4,8 +4,11 @@ Create a blog and prettify it
 
 Django Girls Tutorial: https://tutorial.djangogirls.org/en/
 
+### Framework
+Django
+
 ### Python Version
 3.6.1
 
 ### Packages
-Check requirements.txt
+Listed in requirements.txt
